@@ -16,4 +16,4 @@
  
 ### Ejecutar las pruebas
  * Pruebas ejecutadas 
- ![alt](3.jpg)
+ ![alt](3.JPG)
