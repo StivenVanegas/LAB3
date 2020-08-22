@@ -6,6 +6,9 @@
  * **Nombres:** David Fernando Rivera\
 				Janer Stiven Vanegas
 				
+**********************************************************
+----------------------------------------------------------
+**********************************************************
 				
 ### Compilar y Ejecutar
  * Ejecute los comandos necesarios de Maven, para compilar el proyecto y verificar que el proyecto se creó correctamente y los cambios realizados al archivo pom no generan inconvenientes.
@@ -17,3 +20,13 @@
 ### Ejecutar las pruebas
  * Pruebas ejecutadas 
  ![alt](3.JPG)
+ 
+ 
+ 
+**********************************************************
+----------------------------------------------------------
+**********************************************************
+
+
+## EJERCICIO DE EQUIVALENCIAS
+
