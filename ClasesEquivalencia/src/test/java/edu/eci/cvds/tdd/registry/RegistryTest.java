@@ -10,7 +10,7 @@ public class RegistryTest {
     @Test
     public void validateRegistryResult() {
 
-        Person person = new Person();
+        Person person = new Person("Daniel", 104, 21, Gender.MALE, true);
 
         RegisterResult result = registry.registerVoter(person);
 
@@ -49,12 +49,14 @@ public class RegistryTest {
         Assert.assertEquals(RegisterResult.INVALID_AGE, result);
     }
 	
-	public void validateRegistryResult() {
+	@Test
+	public void idDuplicada() {
 
         Person person1 = new Person("David", 103, 21, Gender.MALE, true);
-		Person person1 = new Person("Stiven", 103, 20, Gender.MALE, true);
-
-        RegisterResult result = registry.registerVoter(person);
+		Person person2 = new Person("Stiven", 103, 20, Gender.MALE, true);
+		
+		registry.registerVoter(person1);
+        RegisterResult result = registry.registerVoter(person2);
 
         Assert.assertEquals(RegisterResult.DUPLICATED, result);
     }
