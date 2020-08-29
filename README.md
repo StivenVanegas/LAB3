@@ -33,7 +33,7 @@
  
 ### Ejecutar las pruebas
  * Pruebas ejecutadas 
- ![alt](resources\3.JPG)
+ ![alt](resources/3.JPG)
  
  
  
