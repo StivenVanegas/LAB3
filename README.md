@@ -59,7 +59,7 @@
 
 	| Número | Clase de equivalencia (en lenguaje natural o matemático). | Resultado correcto/incorrecto. |
 	| ------------- | ------------- | ------------- |
-	| 1 | tarifaBase < 0 | Incorrecto |
-	| 2 | edad<0 | Incorrecto |
-	| 3 | edad>122 | Incorrecto |
+	| 1 | 'tarifaBase < 0' | Incorrecto |
+	| 2 | 'edad<0' | Incorrecto |
+	| 3 | 'edad>122' | Incorrecto |
 	
