@@ -55,5 +55,11 @@
 		
  2. En la siguiente tabla enumere un conjunto de clases de equivalencia que -según usted- creen una
 	buena división del conjunto de datos de entrada de la función anterior:
-	
+
+
+	| Número | Clase de equivalencia (en lenguaje natural o matemático). | Resultado correcto/incorrecto. |
+	| ------------- | ------------- | ------------- |
+	| 1 | tarifaBase < 0 | Incorrecto |
+	| 2 | edad<0 | Incorrecto |
+	| 3 | edad>122 | Incorrecto |
 	
