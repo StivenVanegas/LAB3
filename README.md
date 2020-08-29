@@ -79,14 +79,37 @@
 	| 2 | `diasAntelacion=-4` | ExceptionParametrosInvalidos |
 	| 3 | `edad = -20` | ExceptionParametrosInvalidos |
 	| 4 | `edad = 250` | ExceptionParametrosInvalidos |
-	| 5 | `(tarifaBase=100)` \ `(diasAntelacion=25)` \ `(edad = 20)` | 77 |
-	| 6 | `(tarifaBase=100)` \ `(diasAntelacion=25)` \ ` (edad=60) ` | 85 |
-	| 7 | `(tarifaBase=100)` \ `(diasAntelacion=30)` \ `(edad=15)` | 80 |
-	| 8 | `(tarifaBase=100)` \ `(diasAntelacion=15)` \ `(edad=80)` | 92 |
-	| 9 | `(tarifaBase=100)` \ `(diasAntelacion=15)` \ `(edad=45)` | 100 |
-	| 10 | `(tarifaBase=100)` \ `(diasAntelacion=15)` \ `(65<edad)` | 92 |
+	| 5 | `(tarifaBase=100)`, `(diasAntelacion=25)`, `(edad = 20)` | 77 |
+	| 6 | `(tarifaBase=100)`, `(diasAntelacion=25)`, ` (edad=60) ` | 85 |
+	| 7 | `(tarifaBase=100)`, `(diasAntelacion=30)`, `(edad=15)` | 80 |
+	| 8 | `(tarifaBase=100)`, `(diasAntelacion=15)`, `(edad=80)` | 92 |
+	| 9 | `(tarifaBase=100)`, `(diasAntelacion=15)`, `(edad=45)` | 100 |
+	| 10 | `(tarifaBase=100)`, `(diasAntelacion=15)`, `(65<edad)` | 92 |
 
  4. A partir de las clases de equivalencia identificadas en el punto 2, identifique las condiciones límite o
     de frontera de las mismas.
 	
-	
+	| Número | Fronteras | 
+	| ------------- | ------------- | 
+	| 1 | `tarifaBase<=0` | 
+	| 2 | `diasAntelacion<0` |
+	| 3 | `edad <= 0` |
+	| 4 | `edad>122` | 
+	| 5 | `(0>=tarifaBase) && (20>diasAntelacion) && (65<edad)` | 
+	| 6 | `(0>=tarifaBase) && (20>diasAntelacion) && (65>=edad) && (18<=edad)` |
+	| 7 | `(0<=tarifaBase) && (20<diasAntelacion) && (18>edad) && (0<edad)` |
+	| 8 | `(0<=tarifaBase) && (0<=diasAntelacion) && (20>=diasAntelacion) && (18>edad) && (0<edad)` |
+	| 9 | `(0<=tarifaBase) && (0<=diasAntelacion) && (20>=diasAntelacion) && (18<=edad) && (65>=edad)` |
+	| 10 | `(0<=tarifaBase) && (0<=diasAntelacion) && (20>=diasAntelacion) && (122<edad)` |
+
+ 5. Para cada una de las condiciones de frontera anteriores, defina casos de prueba específicos.
+ 	
+	| Número | Entradas | Salidas | 
+	| ------------- | ------------- | ------------- | 
+	| 1 | `tarifaBase=-2` | ExceptionParametrosInvalidos |
+	| 2 | `diasAntelacion=-2` | ExcepcionParametrosInvalidos |
+	| 3 | `edad=0` | ExcepcionParametrosInvalidos |
+	| 4 | `edad=155` |  ExcepcionParametrosInvalidos |
+	| 5 | `(tarifaBase=0)`, `(diasAntelacion=25)`, `(edad=69)` | 0 | 
+	| 6 | `(tarifaBase=0)`, `(diasAntelacion=25)`, `(edad=45)` | 0 |
+	| 7 | `(tarifaBase=0)`, `(diasAntelacion=15)`, `(edad=155)` | ExcepcionParametrosInvalidos |
