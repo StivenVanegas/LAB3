@@ -45,7 +45,7 @@
 ## EJERCICIO DE EQUIVALENCIAS
 
  1. De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería
-	arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.
+	arrojar una excepción de tipo ExceptionParametrosInvalidos?. Agregue esto a la especificación.
 	
 	* Consideramos que deberian de haber excepciones de parametros Invalidos cuando:
 		* `diasDeAntelacion<0`
@@ -107,9 +107,9 @@
 	| Número | Entradas | Salidas | 
 	| ------------- | ------------- | ------------- | 
 	| 1 | `tarifaBase=-2` | ExceptionParametrosInvalidos |
-	| 2 | `diasAntelacion=-2` | ExcepcionParametrosInvalidos |
-	| 3 | `edad=0` | ExcepcionParametrosInvalidos |
-	| 4 | `edad=155` |  ExcepcionParametrosInvalidos |
+	| 2 | `diasAntelacion=-2` | ExceptionParametrosInvalidos |
+	| 3 | `edad=0` | ExceptionParametrosInvalidos |
+	| 4 | `edad=155` |  ExceptionParametrosInvalidos |
 	| 5 | `(tarifaBase=0)`, `(diasAntelacion=25)`, `(edad=69)` | 0 | 
 	| 6 | `(tarifaBase=0)`, `(diasAntelacion=25)`, `(edad=45)` | 0 |
-	| 7 | `(tarifaBase=0)`, `(diasAntelacion=15)`, `(edad=155)` | ExcepcionParametrosInvalidos |
+	| 7 | `(tarifaBase=0)`, `(diasAntelacion=15)`, `(edad=155)` | ExceptionParametrosInvalidos |
